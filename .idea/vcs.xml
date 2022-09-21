@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/Practice" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/Practice/Assignments" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/Practice/DeitelExercises" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/Practice/DeitelExercises/Chapter6/Game" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/Practice/DeitelExercises/Chapter7" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/Practice/Game" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/Practice/Phone" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/Practice/Snacks" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/TDD" vcs="Git" />
+  </component>
+</project>
