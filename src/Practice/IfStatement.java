@@ -2,7 +2,7 @@ package Practice;
 
 import java.util.Scanner;
 
-public class IfStatementTutorial {
+public class IfStatement {
     public static void main (String[] args) {
         try (Scanner sc = new Scanner (System.in)) {
             System.out.print("Enter the first number : ");

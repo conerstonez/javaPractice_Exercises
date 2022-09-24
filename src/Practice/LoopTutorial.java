@@ -2,7 +2,7 @@ package Practice;
 
 import java.util.Scanner;
 
-public class LoopsTutorial {
+public class LoopTutorial {
     ////for loop
 //    private static Scanner sc;
 //        public static void main(String[] args) {
