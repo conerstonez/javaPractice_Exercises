@@ -1,10 +1,9 @@
 package Practice;
 
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
 
-public class guessingApp {
+public class GuessingApp {
 
 public static void main(String[] args) { play(); }
 
