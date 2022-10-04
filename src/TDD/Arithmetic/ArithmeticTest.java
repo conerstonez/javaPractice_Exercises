@@ -5,12 +5,13 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class ArithmeticTest {
-    Arithmetic expressions;
+
+class ArithmeticsTest {
+    Aritmetics expressions;
 
     @BeforeEach
     void setUp() {
-        expressions = new Arithmetic();
+        expressions = new Aritmetics();
     }
     @Test
     void objectExitsTest(){

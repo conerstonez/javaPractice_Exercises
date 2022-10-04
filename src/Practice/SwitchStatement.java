@@ -2,7 +2,7 @@ package Practice;
 
 import java.util.Scanner;
 
-public class SwitchStatementTutorial {
+public class SwitchStatement {
     public static void main(String[] args) {
         try (Scanner sc  = new Scanner(System.in)) {
             System.out.println("Enter an input");

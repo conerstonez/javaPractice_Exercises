@@ -3,7 +3,7 @@ package Practice;
 import java.lang.System;
 import java.util.*;
 
-public class Something {
+public class SomeGrades {
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);

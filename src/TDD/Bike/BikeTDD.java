@@ -1,6 +1,6 @@
 package TDD.Bike;
 
-public class Bike {
+public class BikeTDD {
     private boolean power;
     private int acceleration;
     private int gear;

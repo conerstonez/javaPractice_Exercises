@@ -4,10 +4,10 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class AirconditionerTest {
+class AirConditionerTest {
     @Test
     public void powerOn(){
-        Airconditioner newAC = new Airconditioner();
+        AirConditioner newAC = new AirConditioner();
         newAC.setPower(false);
         boolean value = newAC.checkPower();
         assertEquals(false, newAC.checkPower());
@@ -16,7 +16,7 @@ class AirconditionerTest {
     }
     @Test
     public void powerOff(){
-        Airconditioner newAC = new Airconditioner();
+        AirConditioner newAC = new AirConditioner();
         newAC.setPower(true);
         assertEquals(true, newAC.checkPower());
         newAC.setPower(false);
@@ -24,7 +24,7 @@ class AirconditionerTest {
     }
     @Test
     public void increaseTemperature(){
-        Airconditioner newAC = new Airconditioner();
+        AirConditioner newAC = new AirConditioner();
         newAC.setPower(true);
         assertEquals(true, newAC.checkPower());
         newAC.setTemperature(16);
@@ -35,7 +35,7 @@ class AirconditionerTest {
     }
     @Test
     public void decreseTemperature(){
-        Airconditioner newAC = new Airconditioner();
+        AirConditioner newAC = new AirConditioner();
         newAC.setPower(true);
         assertEquals(true, newAC.checkPower());
         newAC.setTemperature(28);
@@ -46,7 +46,7 @@ class AirconditionerTest {
     @Test
     public void temperatureRange(){
         //Temperature cannot go below 16 degrees
-        Airconditioner newAC = new Airconditioner();
+        AirConditioner newAC = new AirConditioner();
         newAC.setPower(true);
         assertEquals(true, newAC.checkPower());
         newAC.setTemperature(16);

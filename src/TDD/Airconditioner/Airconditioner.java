@@ -1,6 +1,6 @@
 package TDD.Airconditioner;
 
-public class Airconditioner {
+public class AirConditioner {
     private boolean power;
     private int temperature;
     public void setPower(boolean value) {

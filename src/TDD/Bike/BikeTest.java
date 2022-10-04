@@ -7,99 +7,99 @@ import static org.junit.jupiter.api.Assertions.*;
 public class BikeTest {
     @Test
     public void powerOnTest(){
-        Bike myBike = new Bike();
-        myBike.ignition(false);
-        boolean value = myBike.checkPower();
-        assertEquals(false, myBike.checkPower());
-        myBike.ignition(true);
-        assertEquals(true,myBike.checkPower());
+        BikeTDD myBikeTDD = new BikeTDD();
+        myBikeTDD.ignition(false);
+        boolean value = myBikeTDD.checkPower();
+        assertEquals(false, myBikeTDD.checkPower());
+        myBikeTDD.ignition(true);
+        assertEquals(true, myBikeTDD.checkPower());
     }
     @Test
     public void powerOffTest(){
-        Bike myBike = new Bike();
-        myBike.ignition(true);
-        boolean value = myBike.checkPower();
+        BikeTDD myBikeTDD = new BikeTDD();
+        myBikeTDD.ignition(true);
+        boolean value = myBikeTDD.checkPower();
         assertEquals(true, value);
-        myBike.ignition(false);
-        assertEquals(false, myBike.checkPower());
+        myBikeTDD.ignition(false);
+        assertEquals(false, myBikeTDD.checkPower());
     }
     @Test
     public void accelerationTest() {
-        Bike myBike = new Bike();
-        myBike.ignition(true);
-        assertEquals(true, myBike.checkPower());
+        BikeTDD myBikeTDD = new BikeTDD();
+        myBikeTDD.ignition(true);
+        assertEquals(true, myBikeTDD.checkPower());
         //Gear 1
-        myBike.speedGear(1);
-        int number = myBike.checkGear();
-        assertEquals(1, myBike.checkGear());
-        myBike.accelerate(15);
-        int speed = myBike.finalSpeed();
-        assertEquals(16, myBike.finalSpeed());
+        myBikeTDD.speedGear(1);
+        int number = myBikeTDD.checkGear();
+        assertEquals(1, myBikeTDD.checkGear());
+        myBikeTDD.accelerate(15);
+        int speed = myBikeTDD.finalSpeed();
+        assertEquals(16, myBikeTDD.finalSpeed());
         //Gear 2
-        myBike.speedGear(2);
-        assertEquals(2, myBike.checkGear());
-        myBike.accelerate(24);
-        assertEquals(26, myBike.finalSpeed());
+        myBikeTDD.speedGear(2);
+        assertEquals(2, myBikeTDD.checkGear());
+        myBikeTDD.accelerate(24);
+        assertEquals(26, myBikeTDD.finalSpeed());
         //Gear 3
-        myBike.speedGear(3);
-        assertEquals(3, myBike.checkGear());
-        myBike.accelerate(35);
-        assertEquals(38, myBike.finalSpeed());
+        myBikeTDD.speedGear(3);
+        assertEquals(3, myBikeTDD.checkGear());
+        myBikeTDD.accelerate(35);
+        assertEquals(38, myBikeTDD.finalSpeed());
         //Gear 4
-        myBike.speedGear(4);
-        assertEquals(4, myBike.checkGear());
-        myBike.accelerate(44);
-        assertEquals(48, myBike.finalSpeed());
+        myBikeTDD.speedGear(4);
+        assertEquals(4, myBikeTDD.checkGear());
+        myBikeTDD.accelerate(44);
+        assertEquals(48, myBikeTDD.finalSpeed());
     }
     @Test
     public void decelerationTest(){
-        Bike myBike = new Bike();
-        myBike.ignition(true);
-        assertEquals(true, myBike.checkPower());
+        BikeTDD myBikeTDD = new BikeTDD();
+        myBikeTDD.ignition(true);
+        assertEquals(true, myBikeTDD.checkPower());
         //Gear 1
-        myBike.speedGear(1);
-        int number = myBike.checkGear();
-        assertEquals(1, myBike.checkGear());
-        myBike.deccelerate(15);
-        int speed = myBike.finalSpeed();
-        assertEquals(14, myBike.finalSpeed());
+        myBikeTDD.speedGear(1);
+        int number = myBikeTDD.checkGear();
+        assertEquals(1, myBikeTDD.checkGear());
+        myBikeTDD.deccelerate(15);
+        int speed = myBikeTDD.finalSpeed();
+        assertEquals(14, myBikeTDD.finalSpeed());
         //Gear 2
-        myBike.speedGear(2);
-        assertEquals(2, myBike.checkGear());
-        myBike.deccelerate(24);
-        assertEquals(22, myBike.finalSpeed());
+        myBikeTDD.speedGear(2);
+        assertEquals(2, myBikeTDD.checkGear());
+        myBikeTDD.deccelerate(24);
+        assertEquals(22, myBikeTDD.finalSpeed());
         //Gear 3
-        myBike.speedGear(3);
-        assertEquals(3, myBike.checkGear());
-        myBike.deccelerate(35);
-        assertEquals(32, myBike.finalSpeed());
+        myBikeTDD.speedGear(3);
+        assertEquals(3, myBikeTDD.checkGear());
+        myBikeTDD.deccelerate(35);
+        assertEquals(32, myBikeTDD.finalSpeed());
         //Gear 4
-        myBike.speedGear(4);
-        assertEquals(4, myBike.checkGear());
-        myBike.deccelerate(44);
-        assertEquals(40, myBike.finalSpeed());
+        myBikeTDD.speedGear(4);
+        assertEquals(4, myBikeTDD.checkGear());
+        myBikeTDD.deccelerate(44);
+        assertEquals(40, myBikeTDD.finalSpeed());
     }
     @Test
     public void GearSpeedTest(){
-        Bike myBike = new Bike();
-        myBike.ignition(true);
-        assertEquals(true, myBike.checkPower());
+        BikeTDD myBikeTDD = new BikeTDD();
+        myBikeTDD.ignition(true);
+        assertEquals(true, myBikeTDD.checkPower());
         //Gear 1
-        myBike.accelerate(15);
-        myBike.gearShift(1);
-        int number = myBike.checkGear();
-        assertEquals(1, myBike.checkGear());
+        myBikeTDD.accelerate(15);
+        myBikeTDD.gearShift(1);
+        int number = myBikeTDD.checkGear();
+        assertEquals(1, myBikeTDD.checkGear());
         //Gear 2
-        myBike.accelerate(21);
-        myBike.gearShift(2);
-        assertEquals(2, myBike.checkGear());
+        myBikeTDD.accelerate(21);
+        myBikeTDD.gearShift(2);
+        assertEquals(2, myBikeTDD.checkGear());
         //Gear 3
-        myBike.accelerate(30);
-        myBike.gearShift(3);
-        assertEquals(3, myBike.checkGear());
+        myBikeTDD.accelerate(30);
+        myBikeTDD.gearShift(3);
+        assertEquals(3, myBikeTDD.checkGear());
         //Gear 4
-        myBike.accelerate(50);
-        myBike.gearShift(2);
-        assertEquals(4, myBike.checkGear());
+        myBikeTDD.accelerate(50);
+        myBikeTDD.gearShift(2);
+        assertEquals(4, myBikeTDD.checkGear());
     }
 }

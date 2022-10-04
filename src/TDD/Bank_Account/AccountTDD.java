@@ -1,6 +1,6 @@
 package TDD.Bank_Account;
 
-public class Account {
+public class AccountTDD {
     private int balance;
 
     public void deposit(int amount) {
